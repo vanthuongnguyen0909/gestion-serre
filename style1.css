@@ -1,0 +1,87 @@
+/* Barre de navigation */
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    padding: 10px 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Table style */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 4px 6px; /* Réduction du padding vertical */
+    vertical-align: middle;
+    text-align: left;
+    line-height: 1.2; /* Réduction de la hauteur de ligne */
+}
+
+table th {
+    background-color: #f0f0f0;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+table tr {
+    margin: 0;
+    padding: 0;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Colonne "Action" : afficher actions côte à côte proprement */
+table td:last-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Titres */
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Corps de page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+

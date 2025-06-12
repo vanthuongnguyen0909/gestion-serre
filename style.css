@@ -1,0 +1,91 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('image.png') no-repeat center center fixed;
+    background-size: cover; /* Fait en sorte que l'image prenne tout l'écran */
+}
+
+/* Conteneur du formulaire */
+.container {
+    width: 400px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Titre du formulaire */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Style des champs de saisie */
+input[type="text"], 
+input[type="password"] {
+    width: 100%;  
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Effet au focus sur les champs */
+input[type="text"]:focus, 
+input[type="password"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+    outline: none;
+}
+
+/* Style du bouton */
+button {
+    width: 100%;
+    background: linear-gradient(to right, #4CAF50, #45a049);
+    color: white;
+    padding: 14px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Effet hover sur le bouton */
+button:hover {
+    background: linear-gradient(to right, #45a049, #388E3C);
+    transform: scale(1.05);
+}
+
+/* Message d'erreur */
+#message {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+}
+
+/* Animation du formulaire */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
